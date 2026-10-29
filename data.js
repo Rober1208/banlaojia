@@ -15,9 +15,9 @@ window.BAN_DATA = {
   },
 
   tiers: {
-    now: { label: '馬上能做', hint: '免費或幾百元，今晚就能動手' },
-    diy: { label: '週末自己來', hint: '買得到、不用施工' },
-    pro: { label: '請師傅施工', hint: '可先評估是否申請長照補助' }
+    now: { label: '今晚就能做', hint: '免費或幾百元' },
+    diy: { label: '週末動手做', hint: '買得到、不用施工' },
+    pro: { label: '請師傅幫忙', hint: '可以先問長照補助' }
   },
 
   subsidy: {
@@ -30,19 +30,19 @@ window.BAN_DATA = {
 
   profile: [
     {
-      key: 'who', label: '這次要陪誰檢查？', type: 'who',
+      key: 'who', label: '你要陪誰走這一圈？', type: 'who',
       options: ['爸爸', '媽媽', '爸媽', '阿公', '阿嬤', '自己']
     },
     {
-      key: 'mobility', label: '{who}平常走路的狀況', options: [
-        { label: '自己走得很穩', value: 0 },
+      key: 'mobility', label: '{who}平常走路的樣子', options: [
+        { label: '走得很穩', value: 0 },
         { label: '偶爾要扶東西', value: 1 },
         { label: '用拐杖或助行器', value: 2 },
         { label: '使用輪椅', value: 3 }
       ]
     },
     {
-      key: 'fall', label: '過去一年，{who}有跌倒或差點跌倒過嗎？', options: [
+      key: 'fall', label: '這一年，{who}有沒有跌倒，或差點跌倒？', options: [
         { label: '有', value: 'yes' },
         { label: '沒有', value: 'no' },
         { label: '不確定', value: 'unsure' }
@@ -56,25 +56,25 @@ window.BAN_DATA = {
       ]
     },
     {
-      key: 'vision', label: '{who}的視力、對光線的感覺', options: [
-        { label: '還好', value: 'ok' },
-        { label: '怕暗或看不太清楚', value: 'weak' }
+      key: 'vision', label: '{who}在暗的地方，看得清楚嗎？', options: [
+        { label: '還看得清楚', value: 'ok' },
+        { label: '怕暗、看不太清楚', value: 'weak' }
       ]
     },
     {
-      key: 'hand', label: '{who}手的力氣、關節', options: [
-        { label: '還好', value: 'ok' },
-        { label: '握力差或關節會痛', value: 'weak' }
+      key: 'hand', label: '{who}轉開瓶蓋、門把，會吃力嗎？', options: [
+        { label: '不會', value: 'ok' },
+        { label: '會吃力，或關節會痛', value: 'weak' }
       ]
     },
     {
-      key: 'alone', label: '{who}會一個人在家嗎？', options: [
+      key: 'alone', label: '{who}常常一個人在家嗎？', options: [
         { label: '常常會', value: 'yes' },
         { label: '很少', value: 'no' }
       ]
     },
     {
-      key: 'stairs', label: '家裡或進出家門需要爬樓梯嗎？', options: [
+      key: 'stairs', label: '家裡或回家的路上，需要爬樓梯嗎？', options: [
         { label: '需要', value: 'yes' },
         { label: '不需要（有電梯或平面）', value: 'no' }
       ]
@@ -83,12 +83,12 @@ window.BAN_DATA = {
 
   // 從風險最高的浴室開始，避免使用者中途離開時漏掉最重要的地方
   rooms: [
-    { id: 'bath', name: '浴室與廁所', intro: '浴室又濕又窄，是家裡最容易跌倒的地方，我們從這裡開始。' },
-    { id: 'bedroom', name: '臥室', intro: '半夜起床的那幾步路，是長輩最需要被陪伴的時刻。' },
-    { id: 'living', name: '客廳與走道', intro: '請{who}帶你走一次平常最常走的路線。' },
-    { id: 'entry', name: '門口與玄關', intro: '每天進出的地方，小小的高低差也會絆倒人。' },
-    { id: 'kitchen', name: '廚房', intro: '請{who}示範煮一道菜，看看哪個動作最吃力。' },
-    { id: 'stairs', name: '樓梯與陽台', intro: '最後看看上下樓梯和晾衣服的地方。' }
+    { id: 'bath', name: '浴室與廁所', intro: '浴室又濕又窄，是長輩最常跌倒的地方。我們從這裡開始。' },
+    { id: 'bedroom', name: '臥室', intro: '半夜醒來的那幾步路，是最需要有人陪的時候。' },
+    { id: 'living', name: '客廳與走道', intro: '請{who}帶著你，走一次每天最常走的那條路。' },
+    { id: 'entry', name: '門口與玄關', intro: '每天出門、回家都會經過這裡，小小的高低差也會絆倒人。' },
+    { id: 'kitchen', name: '廚房', intro: '請{who}煮一道拿手菜給你看，順便看看哪個動作最吃力。' },
+    { id: 'stairs', name: '樓梯與陽台', intro: '最後，看看上下樓梯和晾衣服的地方。' }
   ],
 
   items: [
@@ -522,5 +522,5 @@ window.BAN_DATA = {
     }
   ],
 
-  reactions: ['覺得還好', '有點擔心', '很困擾', '目前不想改']
+  reactions: ['還好啦', '有點擔心', '真的很困擾', '先不想改']
 };

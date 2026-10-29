@@ -3,34 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>伴老家｜陪爸媽做居家安全健檢</title>
-  <meta name="description" content="陪爸媽走一圈家裡，約 15 分鐘找出跌倒風險，得到分級改善清單與長照補助指引。不用下載、不用登入。">
-  <meta name="theme-color" content="#1E6B5C">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <title>伴老家｜今晚，陪爸媽走一圈家裡</title>
+  <meta name="description" content="花 15 分鐘，和爸媽一起看看家裡哪裡容易跌倒。一邊走，一邊聊，最後帶走一張改善小筆記與長照補助指引。">
+  <meta name="theme-color" content="#232D4B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <a class="skip" href="#app">跳到主要內容</a>
 
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <button class="brand" type="button" data-action="home" aria-label="伴老家，回到首頁">伴老家</button>
+      <button class="brand" type="button" data-action="home" aria-label="伴老家，回到首頁">
+        <svg class="brand-lamp" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.3 1 2.1V16h6v-.4c0-.8.4-1.5 1-2.1A6 6 0 0 0 12 3z"/></svg>
+        伴老家
+      </button>
       <div class="tools" role="group" aria-label="閱讀設定">
-        <button class="tool" type="button" data-action="scale">字體：<span data-scale-label>標準</span></button>
+        <button class="tool" type="button" data-action="scale">字 <span data-scale-label>標準</span></button>
         <button class="tool" type="button" data-action="contrast" aria-pressed="false">高對比</button>
       </div>
     </div>
   </header>
 
-  <main id="app" class="wrap" tabindex="-1"></main>
+  <main id="app" tabindex="-1"></main>
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <footer class="wrap foot">
-    <p>資料只存在這支手機的瀏覽器裡，不會上傳。</p>
-    <p>尺寸建議參考《建築物無障礙設施設計規範》與臺北市無障礙住宅設計基準；補助金額參考長照 2.0 居家無障礙環境改善公開資料，實際以各縣市公告及照管專員評估為準。</p>
+  <footer class="foot">
+    <div class="wrap">
+      <p>所有紀錄只留在這支手機裡，不會上傳。</p>
+      <p>尺寸建議參考《建築物無障礙設施設計規範》與臺北市無障礙住宅設計基準；補助金額參考長照 2.0 居家無障礙環境改善公開資料，實際以各縣市公告及照管專員評估為準。</p>
+    </div>
   </footer>
 
-  <script src="data.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="data.js?v=8"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
